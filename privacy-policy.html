@@ -1,0 +1,260 @@
+<!doctype html>
+<html lang="tr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Sınav Kaygısı Kontrol Sende — Gizlilik Politikası</title>
+    <style>
+      :root {
+        --bg: #f4fbfb;
+        --surface: #ffffff;
+        --line: #d8eaed;
+        --text: #17333d;
+        --muted: #5f7a82;
+        --accent: #14808e;
+        --accent-soft: #e7f5f3;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family: "Segoe UI", Arial, sans-serif;
+        background:
+          radial-gradient(circle at top right, #d8f2ef 0, rgba(216, 242, 239, 0) 28rem),
+          linear-gradient(180deg, #f8fdfd 0%, var(--bg) 100%);
+        color: var(--text);
+      }
+
+      .shell {
+        width: min(860px, calc(100% - 32px));
+        margin: 0 auto;
+        padding: 40px 0 64px;
+      }
+
+      .hero,
+      .card {
+        background: var(--surface);
+        border: 1px solid var(--line);
+        border-radius: 20px;
+        box-shadow: 0 16px 36px rgba(15, 76, 92, 0.08);
+      }
+
+      .hero {
+        padding: 28px;
+        margin-bottom: 18px;
+      }
+
+      .badge {
+        display: inline-block;
+        margin-bottom: 12px;
+        padding: 8px 12px;
+        border-radius: 999px;
+        background: var(--accent-soft);
+        color: var(--accent);
+        font-size: 12px;
+        font-weight: 800;
+        letter-spacing: 0.08em;
+      }
+
+      h1,
+      h2 {
+        margin: 0 0 12px;
+      }
+
+      h1 {
+        font-size: 34px;
+        line-height: 1.15;
+      }
+
+      h2 {
+        font-size: 22px;
+      }
+
+      p,
+      li {
+        color: var(--muted);
+        line-height: 1.7;
+        font-size: 16px;
+      }
+
+      .meta {
+        margin-top: 14px;
+        color: var(--muted);
+        font-size: 14px;
+      }
+
+      .stack {
+        display: grid;
+        gap: 14px;
+      }
+
+      .card {
+        padding: 22px 24px;
+      }
+
+      ul {
+        padding-left: 20px;
+        margin: 10px 0 0;
+      }
+
+      a {
+        color: var(--accent);
+      }
+
+      @media (max-width: 640px) {
+        .shell {
+          width: min(100% - 20px, 860px);
+          padding: 20px 0 40px;
+        }
+
+        .hero,
+        .card {
+          border-radius: 16px;
+        }
+
+        h1 {
+          font-size: 28px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main class="shell">
+      <section class="hero">
+        <div class="badge">SINAV KAYGISI KONTROL SENDE</div>
+        <h1>Gizlilik Politikası</h1>
+        <p>
+          Bu politika, <strong>Sınav Kaygısı Kontrol Sende</strong> uygulamasının kullanıcı
+          verilerini nasıl işlediğini açıklar. Uygulama, sınav kaygısıyla başa çıkmaya yönelik
+          bir öz-yardım ve psikoeğitim aracıdır; tıbbi tanı koymaz ve tedavi sunmaz.
+        </p>
+        <p class="meta">Son güncelleme: 8 Haziran 2026</p>
+      </section>
+
+      <section class="stack">
+        <article class="card">
+          <h2>1. İşlenen veriler</h2>
+          <p>
+            Uygulama, deneyimini kişiselleştirmek için aşağıdaki bilgileri işleyebilir:
+            ad, sınıf, sınav türü ve sınav tarihi; kaygı/semptom puanları; düşünce günlüğü
+            kayıtları; modül ilerlemesi; çalışma oturumları; görev (homework) girişleri ve
+            senin yazdığın serbest metin planlar/notlar (sınav günü planı, ebeveyn planı,
+            gerileme planı vb.).
+          </p>
+        </article>
+
+        <article class="card">
+          <h2>2. Verilerin saklanması (cihazda)</h2>
+          <p>
+            Yukarıdaki bilgilerin <strong>tamamı yalnızca kendi cihazında saklanır.</strong>
+            Hassas alanlar (ad, sınav tarihi, semptom puanları, düşünce kayıtları, planlar,
+            görev verileri) şifreli yerel depolamada tutulur. Bu içerikler uygulama sunucularına
+            veya üçüncü taraflara <strong>gönderilmez.</strong>
+          </p>
+        </article>
+
+        <article class="card">
+          <h2>3. Cihaz dışına aktarılan veriler (anonim kullanım istatistiği)</h2>
+          <p>
+            Uygulamanın genel kullanımını ölçebilmek için <strong>anonim</strong> kullanım
+            olayları geliştirici analiz paneline (Supabase) gönderilebilir. Bu kapsamda yalnızca
+            şunlar aktarılır:
+          </p>
+          <ul>
+            <li>anonim kurulum/katılımcı kaydı (rastgele, kişiyle ilişkilendirilemeyen bir kimlik)</li>
+            <li>onboarding (tanışma) tamamlandı bilgisi</li>
+            <li>hangi modülün tamamlandığı bilgisi</li>
+            <li>kaydedilen bir çalışma oturumunun süresi</li>
+          </ul>
+          <p>
+            Bu aktarımda <strong>ad, sınav tarihi, semptom puanları, düşünce kayıtları, planlar,
+            notlar ve görev içerikleri gönderilmez.</strong> Veriler aktarım sırasında HTTPS ile
+            şifrelenir, reklam veya üçüncü taraf pazarlama amacıyla kullanılmaz ve kimseyle
+            paylaşılmaz.
+          </p>
+        </article>
+
+        <article class="card">
+          <h2>4. Gömülü videolar (YouTube)</h2>
+          <p>
+            Bazı modüllerde, uygulama içine gömülü kısa tanıtım videoları bulunabilir. Bir videoyu
+            oynattığında içerik YouTube üzerinden yüklenir; bu sırada YouTube/Google, kendi
+            gizlilik politikası kapsamında veri işleyebilir. Videolar sade bir şekilde gösterilir
+            (başka kanalların önerileri, yorumlar ve YouTube'a çıkış kapatılmıştır) ve yalnızca
+            ilgili modülü açıp video bulunan bir ekrana geldiğinde yüklenir. YouTube/Google
+            uygulamasının veri işleyişi için:
+            <a href="https://policies.google.com/privacy">policies.google.com/privacy</a>
+          </p>
+        </article>
+
+        <article class="card">
+          <h2>5. Bildirimler</h2>
+          <p>
+            Bildirim izni yalnızca görev (homework) hatırlatıcıları için kullanılır ve sadece sen
+            bir hatırlatıcı açtığında istenir. Bildirimler reklam veya pazarlama amacıyla
+            kullanılmaz.
+          </p>
+        </article>
+
+        <article class="card">
+          <h2>6. Verilerini silme</h2>
+          <p>
+            Uygulama içindeki <strong>"Gizlilik ve Veri Silme"</strong> ekranından, cihazında
+            saklanan tüm kayıtlarını silebilirsin. Bu işlem kalıcıdır ve geri alınamaz.
+          </p>
+        </article>
+
+        <article class="card">
+          <h2>7. Hassas içerik ve sağlık</h2>
+          <p>
+            Uygulama; sınav kaygısı, duygu durumu ve serbest metin psikolojik notlar içerebilen
+            alanlar barındırır. Bu veriler hassas kabul edilir ve "en az veri" ilkesiyle ele
+            alınır (yukarıda açıklandığı gibi cihazda kalır). Uygulama bir tıbbi cihaz değildir,
+            tanı koymaz ve profesyonel psikolojik desteğin yerini tutmaz.
+          </p>
+        </article>
+
+        <article class="card">
+          <h2>8. Çocuklar ve yaş</h2>
+          <p>
+            Uygulama, ortaöğretim ve lise dönemi sınavlarına hazırlanan kullanıcılar için
+            tasarlanmıştır ve 13 yaş ve üzeri için uygundur. 13 yaşından küçük çocuklardan bilerek
+            veri toplanmaz. Ebeveyn rehberi bölümü, velilerin sürece destek olması için bilgi
+            sağlar.
+          </p>
+        </article>
+
+        <article class="card">
+          <h2>9. Kriz durumları</h2>
+          <p>
+            Uygulama, yoğun kaygı veya kendine zarar verme düşünceleri gibi durumlar için
+            profesyonel destek hatlarına (örneğin 182 MHRS ve 112 Acil) yönlendirir. Acil bir
+            durumda lütfen vakit kaybetmeden bu hatlara veya bir sağlık kuruluşuna başvur.
+          </p>
+        </article>
+
+        <article class="card">
+          <h2>10. İletişim</h2>
+          <p>
+            Gizlilikle ilgili sorularını veya taleplerini şu adrese iletebilirsin:
+          </p>
+          <ul>
+            <li>E-posta: <a href="mailto:sinavkaygisikontrolsende@gmail.com">sinavkaygisikontrolsende@gmail.com</a></li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <h2>11. Politika değişiklikleri</h2>
+          <p>
+            Bu politika gerektiğinde güncellenebilir. Gelecekte farklı analiz, çökme raporlama,
+            hesap sistemi veya bulut senkronizasyonu eklenirse politika buna göre yenilenir ve
+            önemli değişiklikler uygulama içinde veya mağaza sayfasında duyurulur.
+          </p>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>
