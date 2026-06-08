@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="tr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Sınav Kaygısı Kontrol Sende — Veri Silme</title>
+    <style>
+      :root {
+        --bg: #f4fbfb;
+        --surface: #ffffff;
+        --line: #d8eaed;
+        --text: #17333d;
+        --muted: #5f7a82;
+        --accent: #14808e;
+        --accent-soft: #e7f5f3;
+      }
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        font-family: "Segoe UI", Arial, sans-serif;
+        background:
+          radial-gradient(circle at top right, #d8f2ef 0, rgba(216, 242, 239, 0) 28rem),
+          linear-gradient(180deg, #f8fdfd 0%, var(--bg) 100%);
+        color: var(--text);
+      }
+      .shell { width: min(860px, calc(100% - 32px)); margin: 0 auto; padding: 40px 0 64px; }
+      .hero, .card {
+        background: var(--surface);
+        border: 1px solid var(--line);
+        border-radius: 20px;
+        box-shadow: 0 16px 36px rgba(15, 76, 92, 0.08);
+      }
+      .hero { padding: 28px; margin-bottom: 18px; }
+      .badge {
+        display: inline-block; margin-bottom: 12px; padding: 8px 12px; border-radius: 999px;
+        background: var(--accent-soft); color: var(--accent); font-size: 12px; font-weight: 800; letter-spacing: 0.08em;
+      }
+      h1, h2 { margin: 0 0 12px; }
+      h1 { font-size: 32px; line-height: 1.15; }
+      h2 { font-size: 21px; }
+      p, li { color: var(--muted); line-height: 1.7; font-size: 16px; }
+      .meta { margin-top: 14px; color: var(--muted); font-size: 14px; }
+      .stack { display: grid; gap: 14px; }
+      .card { padding: 22px 24px; }
+      ol, ul { padding-left: 20px; margin: 10px 0 0; }
+      a { color: var(--accent); }
+      @media (max-width: 640px) {
+        .shell { width: min(100% - 20px, 860px); padding: 20px 0 40px; }
+        .hero, .card { border-radius: 16px; }
+        h1 { font-size: 26px; }
+      }
+    </style>
+  </head>
+  <body>
+    <main class="shell">
+      <section class="hero">
+        <div class="badge">SINAV KAYGISI KONTROL SENDE</div>
+        <h1>Veri Silme</h1>
+        <p>
+          Bu sayfa, <strong>Sınav Kaygısı Kontrol Sende</strong> uygulamasında verilerini nasıl
+          sileceğini açıklar. Geliştirici: Yusuf Selman Çelik.
+        </p>
+        <p class="meta">Son güncelleme: 8 Haziran 2026</p>
+      </section>
+
+      <section class="stack">
+        <article class="card">
+          <h2>Uygulama içinden silme (önerilen)</h2>
+          <p>Tüm verilerini doğrudan uygulamadan kalıcı olarak silebilirsin:</p>
+          <ol>
+            <li>Uygulamayı aç.</li>
+            <li><strong>Gizlilik ve Veri Silme</strong> ekranına git.</li>
+            <li><strong>Tüm verilerimi sil</strong> seçeneğine dokun ve onayla.</li>
+          </ol>
+          <p>Bu işlem geri alınamaz ve cihazda saklanan tüm kayıtlarını anında kaldırır.</p>
+        </article>
+
+        <article class="card">
+          <h2>Silinen veriler</h2>
+          <p>Silme işlemi, cihazında saklanan şu verilerin tamamını kaldırır:</p>
+          <ul>
+            <li>ad, sınıf, sınav türü ve sınav tarihi</li>
+            <li>kaygı/semptom puanları</li>
+            <li>düşünce günlüğü kayıtları</li>
+            <li>sınav günü planı, ebeveyn planı, gerileme planı ve serbest metin notlar</li>
+            <li>görev (homework) girişleri ve modül ilerlemesi</li>
+            <li>çalışma oturumları</li>
+            <li>anonim analiz kimliği (rastgele katılımcı kimliği)</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <h2>Anonim kullanım istatistikleri</h2>
+          <p>
+            Uygulama, geçmişte yalnızca kişiyle ilişkilendirilemeyen <strong>anonim</strong> kullanım
+            olayları (kurulum, onboarding/modül tamamlama, çalışma süresi) göndermiş olabilir. Bu
+            kayıtlar herhangi bir kişiye, isme veya hesaba bağlı değildir ve bir bireyle
+            eşleştirilemez. Hesap sistemi bulunmadığından bu anonim kayıtlar için kişiye özel bir
+            geri çağırma yapılamaz; konuyla ilgili sorularını aşağıdaki e-postaya iletebilirsin.
+          </p>
+        </article>
+
+        <article class="card">
+          <h2>İletişim</h2>
+          <p>
+            Veri silme konusunda yardım veya soru için:
+            <a href="mailto:sinavkaygisikontrolsende@gmail.com">sinavkaygisikontrolsende@gmail.com</a>
+          </p>
+          <p>İlgili gizlilik politikası: <a href="./privacy-policy.html">Gizlilik Politikası</a></p>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>
